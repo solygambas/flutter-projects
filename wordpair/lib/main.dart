@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:english_words/english_words.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,16 +8,56 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // final wordPair = WordPair.random();
     return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
+        theme: ThemeData(
+          primarySwatch: Colors.purple,
         ),
-      // home: Text('Hello World', style: TextStyle(fontSize: 30.5, color: Colors.green[400]))
-      home: Scaffold(
+        // home: Text('Hello World', style: TextStyle(fontSize: 30.5, color: Colors.green[400]))
+        // home: Scaffold(
+        //     appBar: AppBar(title: Text('WordPair Generator')),
+        //     body: Center(child: Text(wordPair.asPascalCase)))
+        //     );
+        home: const RandomWords());
+  }
+}
+
+class RandomWords extends StatefulWidget {
+  const RandomWords({Key? key}) : super(key: key);
+
+  @override
+  RandomWordsState createState() => RandomWordsState();
+}
+
+class RandomWordsState extends State<RandomWords> {
+  Widget _buildList() {
+    // https://api.flutter.dev/flutter/widgets/ListView-class.html
+    return ListView(
+      padding: const EdgeInsets.all(8),
+      children: <Widget>[
+        Container(
+          height: 50,
+          color: Colors.amber[600],
+          child: const Center(child: Text('Entry A')),
+        ),
+        Container(
+          height: 50,
+          color: Colors.amber[500],
+          child: const Center(child: Text('Entry B')),
+        ),
+        Container(
+          height: 50,
+          color: Colors.amber[100],
+          child: const Center(child: Text('Entry C')),
+        ),
+      ],
+    );
+  }
+
+  Widget build(BuildContext context) {
+    return Scaffold(
         appBar: AppBar(title: Text('WordPair Generator')),
-        body: Center(child: Text('Hello World'))
-      )
-      );
+        body: _buildList());
   }
 }
 
