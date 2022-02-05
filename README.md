@@ -6,11 +6,11 @@ A simple project to understand Flutter basics.
 
 A quick intro to Flutter core concepts and Dart syntax.
 
-[See wordpair folder](https://github.com/solygambas/flutter-projects/tree/main/wordpair)
+[See 01-wordpair folder](https://github.com/solygambas/flutter-projects/tree/main/01-wordpair)
 
 <p align="center">
-    <a href="https://github.com/solygambas/flutter-projects/tree/main/wordpair">
-        <img src="wordpair/screenshot.png" style="width:528px;max-width: 100%;">
+    <a href="https://github.com/solygambas/flutter-projects/tree/main/01-wordpair">
+        <img src="01-wordpair/screenshot.png" style="width:528px;max-width: 100%;">
     </a>
 </p>
 
