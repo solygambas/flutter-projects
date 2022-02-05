@@ -1,5 +1,9 @@
+// https://docs.flutter.dev/deployment/ios
+// https://docs.flutter.dev/deployment/android
+
+
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import './random_words.dart';
 
 void main() => runApp(const MyApp());
 
@@ -22,44 +26,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class RandomWords extends StatefulWidget {
-  const RandomWords({Key? key}) : super(key: key);
-
-  @override
-  RandomWordsState createState() => RandomWordsState();
-}
-
-class RandomWordsState extends State<RandomWords> {
-  Widget _buildList() {
-    // https://api.flutter.dev/flutter/widgets/ListView-class.html
-    return ListView(
-      padding: const EdgeInsets.all(8),
-      children: <Widget>[
-        Container(
-          height: 50,
-          color: Colors.amber[600],
-          child: const Center(child: Text('Entry A')),
-        ),
-        Container(
-          height: 50,
-          color: Colors.amber[500],
-          child: const Center(child: Text('Entry B')),
-        ),
-        Container(
-          height: 50,
-          color: Colors.amber[100],
-          child: const Center(child: Text('Entry C')),
-        ),
-      ],
-    );
-  }
-
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(title: Text('WordPair Generator')),
-        body: _buildList());
-  }
-}
 
 // import 'package:flutter/material.dart';
 
