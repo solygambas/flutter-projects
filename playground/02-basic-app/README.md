@@ -10,5 +10,6 @@ A quick intro to Flutter.
 - rendering stateless widgets.
 - handling images and assets.
 - displaying buttons and icons.
+- using containers, adding padding and margin.
 
 Based on [Flutter Tutorial for Beginners](https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ) by Shaun Pelling - The Net Ninja (2019).

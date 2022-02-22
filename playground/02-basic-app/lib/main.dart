@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
+      // body: Center(
           // fonts
           // child: Text('Hello ninjas', style: TextStyle(
           //   fontSize: 20.0,
@@ -57,11 +57,25 @@ class Home extends StatelessWidget {
       //   icon: Icon(Icons.mail),
       //   style: ElevatedButton.styleFrom(primary: Colors.black),
       // ),
-      child: IconButton(
-        onPressed: () {},
-        icon: Icon(Icons.alternate_email),
-        color: Colors.amber,
-      )),
+      // child: IconButton(
+      //   onPressed: () {},
+      //   icon: Icon(Icons.alternate_email),
+      //   color: Colors.amber,
+      // )),
+
+      // containers & padding
+      // body: Container(
+      //   // padding: EdgeInsets.all(20.0),
+      //   // padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+      //   padding: const EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+      //   margin: const EdgeInsets.all(30.0),
+      //   color: Colors.grey[400],
+      //   child: const Text('hello'),
+      //   ),
+      body: const Padding(
+        padding: EdgeInsets.all(20.0),
+        child: Text('hello'),
+      ),
       floatingActionButton: FloatingActionButton(
         child: const Text('Click'),
         onPressed: () {},
