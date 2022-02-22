@@ -78,22 +78,84 @@ class Home extends StatelessWidget {
       // ),
 
       // rows
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: <Widget>[
+      //   const Text('hello, world'),
+      //   TextButton(
+      //     child: const Text('Click me'), 
+      //     onPressed: () {}, 
+      //    style: TextButton.styleFrom(primary: Colors.amber),
+      //     ),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: const EdgeInsets.all(30.0),
+      //       child: const Text('Inside container'),
+      //     )
+      // ],),
+
+      // columns
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: <Widget>[
+      //   Row(
+      //     children: <Widget>[
+      //       Text('Hello,'),
+      //       Text(' world'),
+      //     ],
+      //   ),
+      //   Container(
+      //     padding: const EdgeInsets.all(20.0),
+      //     color: Colors.cyan,
+      //     child: const Text('One'),
+      //   ),
+      //   Container(
+      //     padding: const EdgeInsets.all(30.0),
+      //     color: Colors.pinkAccent,
+      //     child: const Text('Two'),
+      //   ),
+      //   Container(
+      //     padding: const EdgeInsets.all(40.0),
+      //     color: Colors.amber,
+      //     child: const Text('Three'),
+      //   ),
+      // ],),
+
+      // expanded widgets
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-        const Text('hello, world'),
-        TextButton(
-          child: const Text('Click me'), 
-          onPressed: () {}, 
-         style: TextButton.styleFrom(primary: Colors.amber),
+          Expanded(
+            flex: 3,
+            child: Image.asset('assets/breakfast1.jpg')
+            ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            color: Colors.cyan,
-            padding: const EdgeInsets.all(30.0),
-            child: const Text('Inside container'),
-          )
-      ],),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         child: const Text('Click'),
         onPressed: () {},
