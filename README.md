@@ -38,11 +38,11 @@ A simple world clock application.
 
 [See 02-world-time folder](https://github.com/solygambas/flutter-projects/tree/main/02-world-time)
 
-<p align="center">
+<!-- <p align="center">
     <a href="https://github.com/solygambas/flutter-projects/tree/main/02-world-time">
         <img src="02-world-time/screenshot.png" style="width:528px;max-width: 100%;">
     </a>
-</p>
+</p> -->
 
 ### Features
 
