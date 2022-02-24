@@ -10,8 +10,8 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    data = ModalRoute.of(context)!.settings.arguments as Map;
-    print(data);
+    data = data.isNotEmpty ? data : ModalRoute.of(context)!.settings.arguments as Map;
+    // print(data);
 
     // set background
     String bgImage = data['isDayTime'] ? 'day.png' : 'night.png';
@@ -20,29 +20,38 @@ class _HomeState extends State<Home> {
       backgroundColor: bgColor,
       body: SafeArea(
           child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/$bgImage'),
-                fit: BoxFit.cover,
-                )
-            ),
-            child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 120.0, 0, 0),
-        child: Column(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+          image: AssetImage('assets/$bgImage'),
+          fit: BoxFit.cover,
+        )),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(0, 120.0, 0, 0),
+          child: Column(
             children: <Widget>[
               TextButton.icon(
-                icon: Icon(
-                  Icons.edit_location,
-                  // color: Colors.grey[300],
+                  icon: Icon(
+                    Icons.edit_location,
+                    // color: Colors.grey[300],
                   ),
-                label: Text(
-                  'Edit Location',
+                  label: Text(
+                    'Edit Location',
                   ),
-                style: TextButton.styleFrom(
-      primary: Colors.grey[300],
-    ),
-                onPressed: () => Navigator.pushNamed(context, '/location'),
-              ),
+                  style: TextButton.styleFrom(
+                    primary: Colors.grey[300],
+                  ),
+                  onPressed: () async {
+                    dynamic result =
+                        await Navigator.pushNamed(context, '/location');
+                    setState(() {
+                      data = {
+                        'time': result['time'],
+                        'flag': result['flag'],
+                        'location': result['location'],
+                        'isDayTime': result['isDayTime'],
+                      };
+                    });
+                  }),
               SizedBox(
                 height: 20.0,
               ),
@@ -66,9 +75,9 @@ class _HomeState extends State<Home> {
                     color: Colors.white,
                   )),
             ],
+          ),
         ),
-      ),
-          )),
+      )),
     );
   }
 }

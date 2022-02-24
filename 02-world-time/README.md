@@ -2,9 +2,9 @@
 
 A simple world clock application.
 
-<!-- <p align="center">
+<p align="center">
         <img src="screenshot.png" style="width:528px;max-width: 100%;">
-</p> -->
+</p>
 
 ## Features
 
@@ -18,5 +18,7 @@ A simple world clock application.
 - formatting time with the 'intl' package.
 - displaying a loading spinner with Flutter Spinkit.
 - using a ternary operator to handle light and dark modes.
+- choosing location with ListView.
+- updating the time.
 
 Based on [Flutter Tutorial for Beginners](https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ) by Shaun Pelling - The Net Ninja (2019).
