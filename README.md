@@ -80,6 +80,7 @@ An app to collect brew preferences, using Firebase.
 - listening to auth stream with the Provider package.
 - building sign in and register forms.
 - toggling between forms.
-- registering with email and password.
+- registering and signing in with email and password.
+- adding a loading widget with Flutter Spinkit.
 
 Based on [Flutter & Firebase App Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC) by Shaun Pelling - The Net Ninja (2019).
