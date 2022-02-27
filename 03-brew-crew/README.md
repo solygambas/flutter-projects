@@ -20,5 +20,6 @@ An app to collect brew preferences, using Firebase.
 - listening to database stream.
 - listing brew data.
 - handling user settings in a bottom sheet.
+- working with drop-downs and sliders.
 
 Based on [Flutter & Firebase App Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC) by Shaun Pelling - The Net Ninja (2019).

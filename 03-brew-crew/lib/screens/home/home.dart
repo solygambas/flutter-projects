@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:brew_crew/services/auth.dart';
 import 'package:brew_crew/services/database.dart';
 import 'package:brew_crew/screens/home/brew_list.dart';
+import 'package:brew_crew/screens/home/settings_form.dart';
 import 'package:brew_crew/models/brew.dart';
 
 class Home extends StatelessWidget {
@@ -19,7 +20,7 @@ class Home extends StatelessWidget {
               vertical: 20.0,
               horizontal: 60.0,
             ),
-            child: Text('Bottom Sheet'),
+            child: SettingsForm(),
             );
           });
     }
