@@ -66,11 +66,11 @@ An app to collect brew preferences, using Firebase.
 
 [See 03-brew-crew folder](https://github.com/solygambas/flutter-projects/tree/main/03-brew-crew)
 
-<!-- <p align="center">
+<p align="center">
     <a href="https://github.com/solygambas/flutter-projects/tree/main/03-brew-crew">
         <img src="03-brew-crew/screenshot.png" style="width:528px;max-width: 100%;">
     </a>
-</p> -->
+</p>
 
 ### Features
 
@@ -87,5 +87,6 @@ An app to collect brew preferences, using Firebase.
 - listing brew data.
 - handling user settings in a bottom sheet.
 - working with drop-downs and sliders.
+- using a stream builder and updating user data.
 
 Based on [Flutter & Firebase App Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC) by Shaun Pelling - The Net Ninja (2019).
