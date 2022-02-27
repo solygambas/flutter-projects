@@ -1,3 +1,4 @@
+import 'package:brew_crew/services/database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:brew_crew/models/user.dart';
 
@@ -11,7 +12,9 @@ class AuthService {
 
   // auth change user stream
   Stream<MyUser?> get user {
-    return _auth.authStateChanges().map((User? user) => _userFromFirebase(user));
+    return _auth
+        .authStateChanges()
+        .map((User? user) => _userFromFirebase(user));
   }
 
   // sign in anon
@@ -27,12 +30,13 @@ class AuthService {
   }
 
   // sign in with email & password
-   Future signInWithEmailAndPassword(String email, String password) async {
+  Future signInWithEmailAndPassword(String email, String password) async {
     try {
-      UserCredential userCredential = await _auth.signInWithEmailAndPassword(email: email, password: password);
+      UserCredential userCredential = await _auth.signInWithEmailAndPassword(
+          email: email, password: password);
       User user = userCredential.user!;
       return _userFromFirebase(user);
-    } catch(e) {
+    } catch (e) {
       print(e.toString());
       return null;
     }
@@ -41,10 +45,14 @@ class AuthService {
   // register with email & password
   Future registerWithEmailAndPassword(String email, String password) async {
     try {
-      UserCredential userCredential = await _auth.createUserWithEmailAndPassword(email: email, password: password);
+      UserCredential userCredential = await _auth
+          .createUserWithEmailAndPassword(email: email, password: password);
       User user = userCredential.user!;
+      // create a new document for the user with the uid
+      await DatabaseService(uid: user.uid).updateUserData('0', 'new crew member', 100);
+
       return _userFromFirebase(user);
-    } catch(e) {
+    } catch (e) {
       print(e.toString());
       return null;
     }
@@ -54,7 +62,7 @@ class AuthService {
   Future signOut() async {
     try {
       return await _auth.signOut();
-    } catch(e) {
+    } catch (e) {
       print(e.toString());
       return null;
     }
