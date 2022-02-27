@@ -1,10 +1,11 @@
 # Flutter Projects
 
-This repo is made of 3 projects:
+This repo is made of 4 projects:
 
 1. [**Wordpair Generator**](#wordpair): A quick intro to Flutter core concepts and Dart syntax.
 2. [**World Time**](#worldtime): A simple world clock application.
 3. [**Brew Crew**](#brewcrew): An app to collect brew preferences, using Firebase.
+4. [**Ninja Trips**](#ninjatrips): A travel app to understand Flutter animations.
 
 ## <a name="wordpair"></a> 1) Wordpair Generator
 
@@ -90,3 +91,21 @@ An app to collect brew preferences, using Firebase.
 - using a stream builder and updating user data.
 
 Based on [Flutter & Firebase App Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC) by Shaun Pelling - The Net Ninja (2019).
+
+## <a name="ninjatrips"></a> 4) Ninja Trips
+
+A travel app to understand Flutter animations.
+
+[See 04-ninja-trips folder](https://github.com/solygambas/flutter-projects/tree/main/04-ninja-trips)
+
+<!-- <p align="center">
+    <a href="https://github.com/solygambas/flutter-projects/tree/main/04-ninja-trips">
+        <img src="04-ninja-trips/screenshot.png" style="width:528px;max-width: 100%;">
+    </a>
+</p> -->
+
+### Features
+
+- 
+
+Based on [Flutter Animation Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gP1qg8yj-Jokef29VRCLt1) by Shaun Pelling - The Net Ninja (2020).
