@@ -17,5 +17,7 @@ An app to collect brew preferences, using Firebase.
 - registering and signing in with email and password.
 - adding a loading widget with Flutter Spinkit.
 - using Firestore database to store brew preferences for each user.
+- listening to database stream.
+- listing brew data.
 
 Based on [Flutter & Firebase App Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC) by Shaun Pelling - The Net Ninja (2019).
