@@ -98,11 +98,11 @@ A travel app to understand Flutter animations.
 
 [See 04-ninja-trips folder](https://github.com/solygambas/flutter-projects/tree/main/04-ninja-trips)
 
-<!-- <p align="center">
+<p align="center">
     <a href="https://github.com/solygambas/flutter-projects/tree/main/04-ninja-trips">
         <img src="04-ninja-trips/screenshot.png" style="width:528px;max-width: 100%;">
     </a>
-</p> -->
+</p>
 
 ### Features
 
@@ -111,5 +111,7 @@ A travel app to understand Flutter animations.
 - creating custom implicit animations with TweenAnimationBuilder.
 - animating widgets from one screen to another with Hero animations.
 - building an animation controller with Dart mixins.
+- combining animations with tween sequences.
+- handling animation speed with Curves.
 
 Based on [Flutter Animation Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gP1qg8yj-Jokef29VRCLt1) by Shaun Pelling - The Net Ninja (2020).

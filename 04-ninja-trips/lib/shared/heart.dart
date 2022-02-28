@@ -8,15 +8,15 @@ class Heart extends StatefulWidget {
 class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation _colorAnimation;
+  late Animation<double> _scaleAnimation;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
-        duration: Duration(milliseconds: 500), vsync: this // _HeartState class
+        duration: Duration(milliseconds: 300), vsync: this // _HeartState class
         );
-    _colorAnimation = ColorTween(begin: Colors.grey[400], end: Colors.red)
-        .animate(_controller);
+    
     // _controller.forward();
     _controller.addListener(() {
       print(_controller.value);
@@ -25,6 +25,29 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
     _controller.addStatusListener((status) {
       print(status); // AnimationStatus.dismissed AnimationStatus.completed
     });
+    // _colorAnimation = ColorTween(begin: Colors.grey[400], end: Colors.red)
+    //     .animate(_controller);
+    _colorAnimation = ColorTween(begin: Colors.grey[400], end: Colors.red).animate(_controller);
+    // _scaleAnimation = TweenSequence(<TweenSequenceItem<double>>[
+    //   TweenSequenceItem<double>(
+    //       tween: Tween<double>(begin: 1, end: 2), weight: 50),
+    //   TweenSequenceItem<double>(
+    //       tween: Tween<double>(begin: 2, end: 1), weight: 50),
+    // ]).animate(_controller);
+    _scaleAnimation = TweenSequence<double>(
+  <TweenSequenceItem<double>>[
+    TweenSequenceItem<double>(
+      tween: Tween<double>(begin: 1, end: 2)
+        .chain(CurveTween(curve: Curves.slowMiddle)),
+      weight: 50.0,
+    ),
+    TweenSequenceItem<double>(
+      tween: Tween<double>(begin: 2, end: 1)
+        .chain(CurveTween(curve: Curves.slowMiddle)),
+      weight: 50.0,
+    ),
+  ],
+).animate(_controller);
   }
 
   @override
@@ -39,10 +62,13 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
       animation: _controller,
       builder: (BuildContext context, _) {
         return IconButton(
-          icon: Icon(
-            Icons.favorite,
-            color: _colorAnimation.value,
-            size: 30,
+          icon: ScaleTransition(
+            scale: _scaleAnimation,
+            child: Icon(
+              Icons.favorite,
+              color: _colorAnimation.value,
+              size: 30,
+            ),
           ),
           onPressed: () => _controller.isCompleted
               ? _controller.reverse()
