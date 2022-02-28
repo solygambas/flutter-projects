@@ -113,5 +113,6 @@ A travel app to understand Flutter animations.
 - building an animation controller with Dart mixins.
 - combining animations with tween sequences.
 - handling animation speed with Curves.
+- staggering each list item.
 
 Based on [Flutter Animation Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gP1qg8yj-Jokef29VRCLt1) by Shaun Pelling - The Net Ninja (2020).
