@@ -50,7 +50,7 @@ class Details extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(18),
               child: Text(
-                lorem(paragraphs: 2, words: 60),
+                lorem(paragraphs: 2, words: 15),
                 style: TextStyle(
                   color: Colors.grey[600],
                   height: 1.4
