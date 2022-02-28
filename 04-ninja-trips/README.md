@@ -11,5 +11,7 @@ A travel app to understand Flutter animations.
 - setting up the Flutter starter project.
 - discovering built-in animations.
 - creating custom implicit animations with TweenAnimationBuilder.
+- animating widgets from one screen to another with Hero animations.
+- building an animation controller with Dart mixins.
 
 Based on [Flutter Animation Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gP1qg8yj-Jokef29VRCLt1) by Shaun Pelling - The Net Ninja (2020).
