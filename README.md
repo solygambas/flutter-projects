@@ -1,11 +1,13 @@
 # Flutter Projects
 
-This repo is made of 4 projects:
+4 projects to understand Flutter basics.
 
-1. [**Wordpair Generator**](#wordpair): A quick intro to Flutter core concepts and Dart syntax.
-2. [**World Time**](#worldtime): A simple world clock application.
-3. [**Brew Crew**](#brewcrew): An app to collect brew preferences, using Firebase.
-4. [**Ninja Trips**](#ninjatrips): A travel app to understand Flutter animations.
+| #   | Project                           | Description                                           |
+| --- | --------------------------------- | ----------------------------------------------------- |
+| 01  | [**Wordpair Generator**](#wordpair) | A quick intro to Flutter core concepts and Dart syntax.               |
+| 02  | [**World Time**](#worldtime)        | A simple world clock application.           |
+| 03  | [**Brew Crew**](#brewcrew)     | An app to collect brew preferences, using Firebase.                                 |
+| 04  | [**Ninja Trips**](#ninjatrips)    | A travel app to understand Flutter animations.                     |
 
 ## <a name="wordpair"></a> 1) Wordpair Generator
 
