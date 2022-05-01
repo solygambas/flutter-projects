@@ -2,21 +2,21 @@
 
 4 projects to understand Flutter basics.
 
-| #   | Project                           | Description                                           |
-| --- | --------------------------------- | ----------------------------------------------------- |
-| 01  | [**Wordpair Generator**](#wordpair) | A quick intro to Flutter core concepts and Dart syntax.               |
-| 02  | [**World Time**](#worldtime)        | A simple world clock application.           |
-| 03  | [**Brew Crew**](#brewcrew)     | An app to collect brew preferences, using Firebase.                                 |
-| 04  | [**Ninja Trips**](#ninjatrips)    | A travel app to understand Flutter animations.                     |
+| #   | Project                             | Description                                             |
+| --- | ----------------------------------- | ------------------------------------------------------- |
+| 01  | [**Wordpair Generator**](#wordpair) | A quick intro to Flutter core concepts and Dart syntax. |
+| 02  | [**World Time**](#worldtime)        | A simple world clock application.                       |
+| 03  | [**Brew Crew**](#brewcrew)          | An app to collect brew preferences, using Firebase.     |
+| 04  | [**Ninja Trips**](#ninjatrips)      | A travel app to understand Flutter animations.          |
 
 ## <a name="wordpair"></a> 1) Wordpair Generator
 
 A quick intro to Flutter core concepts and Dart syntax.
 
-[See 01-wordpair folder](https://github.com/solygambas/flutter-projects/tree/main/01-wordpair)
+[See 01-wordpair folder](01-wordpair)
 
 <p align="center">
-    <a href="https://github.com/solygambas/flutter-projects/tree/main/01-wordpair">
+    <a href="01-wordpair">
         <img src="01-wordpair/screenshot.png" style="width:528px;max-width: 100%;">
     </a>
 </p>
@@ -38,10 +38,10 @@ Based on [Flutter Crash Course](https://www.youtube.com/watch?v=1gDhl4leEzA) by 
 
 A simple world clock application.
 
-[See 02-world-time folder](https://github.com/solygambas/flutter-projects/tree/main/02-world-time)
+[See 02-world-time folder](02-world-time)
 
 <p align="center">
-    <a href="https://github.com/solygambas/flutter-projects/tree/main/02-world-time">
+    <a href="02-world-time">
         <img src="02-world-time/screenshot.png" style="width:528px;max-width: 100%;">
     </a>
 </p>
@@ -67,10 +67,10 @@ Based on [Flutter Tutorial for Beginners](https://www.youtube.com/watch?v=1ukSR1
 
 An app to collect brew preferences, using Firebase.
 
-[See 03-brew-crew folder](https://github.com/solygambas/flutter-projects/tree/main/03-brew-crew)
+[See 03-brew-crew folder](03-brew-crew)
 
 <p align="center">
-    <a href="https://github.com/solygambas/flutter-projects/tree/main/03-brew-crew">
+    <a href="03-brew-crew">
         <img src="03-brew-crew/screenshot.png" style="width:528px;max-width: 100%;">
     </a>
 </p>
@@ -98,10 +98,10 @@ Based on [Flutter & Firebase App Tutorial](https://www.youtube.com/playlist?list
 
 A travel app to understand Flutter animations.
 
-[See 04-ninja-trips folder](https://github.com/solygambas/flutter-projects/tree/main/04-ninja-trips)
+[See 04-ninja-trips folder](04-ninja-trips)
 
 <p align="center">
-    <a href="https://github.com/solygambas/flutter-projects/tree/main/04-ninja-trips">
+    <a href="04-ninja-trips">
         <img src="04-ninja-trips/screenshot.png" style="width:528px;max-width: 100%;">
     </a>
 </p>
